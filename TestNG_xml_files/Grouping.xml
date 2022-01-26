@@ -3,7 +3,7 @@
 <suite name="Suite">
 	<test thread-count="5" name="Test">
 
-		<groups><run><include name="Social media"></include></run></groups>
+		<groups><run><include name="Social media"/></run></groups>
 		
 		<classes><class name="com.TestNG.features.Grouping_Features" /></classes>
 		

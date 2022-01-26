@@ -32,6 +32,7 @@ public class Base_Class {
 			System.setProperty("webdriver.chrome.driver",
 					System.getProperty("user.dir") + "//Driver//chromedriver.exe");
 			driver = new ChromeDriver();
+			driver.get("https://www.google.com/");
 		}
 
 		else if (type.equalsIgnoreCase("firefox")) {
@@ -185,11 +186,16 @@ public class Base_Class {
 		driver.manage().timeouts().implicitlyWait(num, type);
 	}
 
-	public static void takeSnap(String pathname) throws IOException {// -------------screenshotmethod
+	public  void takeSnap(String MethodName)  {// -------------screenshotmethod
 		TakesScreenshot shot = (TakesScreenshot) driver;
 		File src = shot.getScreenshotAs(OutputType.FILE);
-		File des = new File(pathname);
-		FileUtils.copyFile(src, des);
+		try {
+		File des = new File("./screen/"+"snap_"+MethodName+"_"+".png");
+		FileUtils.copyFile(src, des);}
+		catch(IOException e) {
+			e.printStackTrace();
+			
+		}
 
 	}
 

@@ -34,4 +34,6 @@ public class Data_Provider {
 				{ "starc", 34, 56, 53, "jack", 56, 43, "string", 45, "jio" },
 				{ "starc", 34, 56, 53, "jack", 56, 43, "string", 45, "jio" },
 
-		};}}
+		};
+		
+    }}

@@ -7,9 +7,12 @@ public class Assert_Concept {
 	@Test
 	private void Demo_Username() {
 	    String expectedusername ="Jackson";
-		String actualusername ="jackson";
+		String actualusername ="Jackson";
 		
 		Assert.assertEquals(expectedusername, actualusername);
+		
+		
+		
 		
 		System.out.println("user name validation sucessfully");
 		
